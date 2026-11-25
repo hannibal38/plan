@@ -26,6 +26,10 @@
   @media (prefers-color-scheme: dark) { th { background: #2a2b2e; } }
   tr:last-child td { border-bottom: none; }
   td.price { white-space: nowrap; font-weight: 600; }
+  td.p1 { background: #1e40af; color: #fff; }
+  td.p2 { background: #3b82f6; color: #fff; }
+  td.p3 { background: #bfdbfe; color: #1e3a8a; }
+  td.pmax { background: #dc2626; color: #fff; }
   a { color: #0b5cad; text-decoration: none; }
   a:hover { text-decoration: underline; }
   @media (prefers-color-scheme: dark) { a { color: #6db3f2; } }
@@ -716,7 +720,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 <body>
 <div class="wrap">
   <h1>2027년 3월 시애틀–LA 여행 계획 정리</h1>
-  <div class="sub"><strong>최종 갱신: 2026-11-25 20:34 JST</strong><br>
+  <div class="sub"><strong>최종 갱신: 2026-11-25 21:53 JST</strong><br>
   시애틀 숙박: 2027-03-11(목) 체크인 → 03-13(토) 체크아웃 · 2박 · 성인 3인 · 객실 1실 (퀸베드 2개 등 3인 투숙 가능 객실 기준)<br>
   금액: Amex Travel Japan 조회(2026-11-24) 기준 2박 총액. "실효 총액"은 세금 포함 요금 + 호텔에서 별도 지불하는 세금·요금을 합친 값입니다. 호텔명을 누르면 지도 위치로 연결됩니다.<br>
   이 문서는 호텔뿐 아니라 전체 일정 개요(M), SEA→LAX 항공(F), LAX→TYO→SHA 다구간(G), 디즈니 티켓(H), 애너하임·LA 호텔(I·J), 대중교통·렌터카(K), 1박 조정안(L), 시애틀 항공 투어(N)까지 논의한 내용을 모두 담습니다.</div>
@@ -732,20 +736,22 @@ svg.leaflet-image-layer.leaflet-interactive path {
     </ul>
   </div>
 
-  <h2>M. 전체 일정 개요</h2>
+  <div class="note"><strong>바로가기:</strong> <a href="#sec-M">M 일정 개요</a> · <a href="#sec-map">지도</a> · <a href="#sec-A">A FHR/THC</a> · <a href="#sec-B">B 가성비</a> · <a href="#sec-C">C 브랜드</a> · <a href="#sec-route">위치·동선</a> · <a href="#sec-F">F SEA→LAX</a> · <a href="#sec-LA">LA 일정·호텔</a> · <a href="#sec-G">G LAX→TYO→SHA</a> · <a href="#sec-H">H 디즈니 티켓</a> · <a href="#sec-I">I 애너하임 호텔</a> · <a href="#sec-J">J LA 시내 1박</a> · <a href="#sec-K">K 대중교통·렌터카</a> · <a href="#sec-L">L 1박 조정안</a> · <a href="#sec-N">N 항공 투어</a></div>
+
+  <h2 id="sec-M">M. 전체 일정 개요</h2>
   <div class="note">인원 기준 — 국제선은 2인만 예약(3인째는 본인이 별도 수배), 미국 국내 이동은 3인 기준, 큰 캐리어 3개 동반. 최종 선택과 결제는 본인이 직접 합니다.</div>
   <div class="tablebox"><table>
     <tr><th>날짜</th><th>구간 · 내용</th><th>상태</th></tr>
     <tr><td>3/11(목)</td><td>NH118 하네다 21:15 → 시애틀 13:20 (2인)</td><td><strong>발권 완료</strong> — 캠페인 특전 25,000마일 + 세금 ¥150,820 (2026-11-24 본인 발권)</td></tr>
-    <tr><td>3/12(금)~13(토)</td><td>시애틀 — 항공 투어(Everett Boeing Future of Flight + Museum of Flight), 다운타운 관광·쇼핑</td><td>숙박 2~3박 (조정안은 L), 투어 방식 미정 (N)</td></tr>
-    <tr><td>3/14(일)</td><td>SEA → LA 국내선 (3인, 수하물 3개)</td><td>DL2769 09:35→12:25 유력, 미예약 (전편 비교는 F)</td></tr>
-    <tr><td>3/15(월)~16(화)</td><td>디즈니랜드 애너하임 2일</td><td>티켓 요금 확인됨 (H), 애너하임 숙박 (I)</td></tr>
-    <tr><td>3/17(수)~19(금) 중</td><td>LAX → 도쿄 (2인, ANA 유상 다구간)</td><td>출발일·편 미정 — 늦출수록 진짜 비용 증가 (G)</td></tr>
+    <tr><td>3/12(금)~13(토)</td><td>시애틀 — 항공 투어(Everett Boeing Future of Flight + Museum of Flight), 다운타운 관광·쇼핑</td><td>숙박 2~3박 (<a href="#sec-L">조정안은 L</a>), 투어 방식 미정 (<a href="#sec-N">N</a>)</td></tr>
+    <tr><td>3/14(일)</td><td>SEA → LA 국내선 (3인, 수하물 3개)</td><td>DL2769 09:35→12:25 유력, 미예약 (<a href="#sec-F">전편 비교는 F</a>)</td></tr>
+    <tr><td>3/15(월)~16(화)</td><td>디즈니랜드 애너하임 2일</td><td>티켓 요금 확인됨 (<a href="#sec-H">H</a>), 애너하임 숙박 (<a href="#sec-I">I</a>)</td></tr>
+    <tr><td>3/17(수)~19(금) 중</td><td>LAX → 도쿄 (2인, ANA 유상 다구간)</td><td>출발일·편 미정 — 늦출수록 진짜 비용 증가 (<a href="#sec-G">G</a>)</td></tr>
     <tr><td>4/10(토)</td><td>NH969 하네다 10:05 → 상하이(홍차오) 12:15 (2인)</td><td>위 다구간 항공권의 2구간으로 확정 전제</td></tr>
   </table></div>
-  <div class="note">아직 정할 것: 시애틀 호텔(A~E), SEA→LA 편과 날짜(F), 숙박 배분(L), LAX 출발일(G), 항공 투어 방식(N).</div>
+  <div class="note">아직 정할 것: 시애틀 호텔(<a href="#sec-A">A</a>~<a href="#sec-C">C</a>), SEA→LA 편과 날짜(<a href="#sec-F">F</a>), 숙박 배분(<a href="#sec-L">L</a>), LAX 출발일(<a href="#sec-G">G</a>), 항공 투어 방식(<a href="#sec-N">N</a>).</div>
 
-  <h2>지도 — 호텔과 목적지</h2>
+  <h2 id="sec-map">지도 — 호텔과 목적지</h2>
   <div class="note">핀 번호는 아래 표의 순서와 같습니다 (A=FHR/THC, B=가성비, C=브랜드). 우상단 레이어 버튼에서 그룹별로 켜고 끌 수 있고, 핀을 누르면 가격과 Google 지도 링크가 나옵니다. 주황색 ★ 핀은 목적지입니다. 배경 지도는 파일 안에 포함되어 있어 외부 지도 서버가 막힌 환경에서도 보입니다. 다운타운은 고해상도, 그 밖의 시애틀 전역(Everett~공항·Renton)은 광역 지도로 들어 있습니다.</div>
   <div id="map"></div>
   <div class="note" id="map-fallback" style="display:none">지도를 불러오지 못했습니다. 인터넷 연결을 확인해 주세요. (지도 타일은 외부 서버에서 받아옵니다)</div>
@@ -754,210 +760,219 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <button type="button" id="btn-all">전체 보기 (Everett~공항 포함)</button>
   </div>
 
-  <h2>A. FHR / THC 후보 5곳</h2>
+  <h2 id="sec-A">A. FHR / THC 후보 5곳</h2>
   <div class="note">FHR은 얼리 체크인(12:00)·레이트 체크아웃(16:00)·조식 2인분이 보장형, THC는 공실 상황에 따라 제공됩니다.</div>
   <div class="tablebox"><table>
-    <tr><th>호텔</th><th>구분</th><th>실효 총액</th><th>침대</th><th>혜택 · 비고</th></tr>
+    <tr><th>호텔</th><th>구분</th><th>실효 총액</th><th>주차(1박)</th><th>침대</th><th>혜택 · 비고</th></tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=The+Alexis+Royal+Sonesta+Hotel+Seattle">The Alexis Royal Sonesta</a></td>
-      <td><span class="tag">THC</span></td><td class="price">약 ¥84,928</td><td>퀸 2개</td>
+      <td><span class="tag">THC</span></td><td class="price">약 ¥84,928</td><td>발렛 $62 +세금</td><td>퀸 2개</td>
       <td>$100 현장 크레딧, 업그레이드. 조식 없음. A 중 최저가, 평점 4.6</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=The+Charter+Hotel+Seattle+Curio+Collection">The Charter Hotel (Curio)</a></td>
-      <td><span class="tag">THC</span></td><td class="price">약 ¥86,127</td><td>퀸 2개</td>
+      <td><span class="tag">THC</span></td><td class="price">약 ¥86,127</td><td>발렛 $65</td><td>퀸 2개</td>
       <td>$100 크레딧. Pike Place 도보 3분. 평점 4.1로 A 중 최저, 부정 리뷰 1건 주의</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Thompson+Seattle+hotel">Thompson Seattle</a></td>
-      <td><span class="tag">THC</span><span class="tag best">추천</span></td><td class="price">약 ¥108,039</td><td>퀸 2개</td>
+      <td><span class="tag">THC</span><span class="tag best">추천</span></td><td class="price">약 ¥108,039</td><td>발렛 $68.75</td><td>퀸 2개</td>
       <td>$100 크레딧 + <strong>조식 2인분 포함</strong> (THC 중 혜택 최상). Pike Place 도보 1분</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Hotel+1000+Seattle">Hotel 1000 (Unbound, Hyatt)</a></td>
-      <td><span class="tag fhr">FHR</span></td><td class="price">약 ¥128,326</td><td>퀸 2개</td>
+      <td><span class="tag fhr">FHR</span></td><td class="price">약 ¥128,326</td><td>발렛 $70 +세금</td><td>퀸 2개</td>
       <td><strong>$150 스파 크레딧</strong>, 조식 2인분, 12:00 체크인·16:00 체크아웃 보장</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Fairmont+Olympic+Hotel+Seattle">Fairmont Olympic</a></td>
-      <td><span class="tag fhr">FHR</span></td><td class="price">약 ¥147,332</td><td>더블 2개</td>
+      <td><span class="tag fhr">FHR</span></td><td class="price">약 ¥147,332</td><td>셀프 $56.14</td><td>더블 2개</td>
       <td>$100 F&B 크레딧, 조식 2인분, 보장형 혜택. 단 더블베드라 성인 3인엔 다소 좁음</td>
     </tr>
   </table></div>
 
-  <h2>B. 가성비 후보 5곳</h2>
+  <h2 id="sec-B">B. 가성비 후보 5곳</h2>
   <div class="note">공항(SeaTac) 저가 모텔은 평점·위생·위치 문제로 제외했습니다.</div>
   <div class="tablebox"><table>
-    <tr><th>호텔</th><th>실효 총액</th><th>침대</th><th>평점</th><th>비고</th></tr>
+    <tr><th>호텔</th><th>실효 총액</th><th>주차(1박)</th><th>침대</th><th>평점</th><th>비고</th></tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=La+Quinta+Inn+%26+Suites+Seattle+Downtown">La Quinta Inn &amp; Suites Downtown</a></td>
-      <td class="price">¥45,789</td><td>퀸 2개</td><td>4.1</td>
+      <td class="price">¥45,789</td><td>셀프 $19</td><td>퀸 2개</td><td>4.1</td>
       <td><strong>조식 포함</strong>이라 실효 최저가. "2인 기준 요금" 문구 있어 3인째 추가요금 예약 전 확인 필요</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Staypineapple+Hotel+Five+Seattle">Staypineapple Hotel Five</a></td>
-      <td class="price">약 ¥48,876</td><td>퀸 2개</td><td>4.3</td>
+      <td class="price">약 ¥48,876</td><td>셀프 $42 +세금</td><td>퀸 2개</td><td>4.3</td>
       <td>다운타운. 체크인 16:00 / 체크아웃 12:00</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Crowne+Plaza+Seattle+Downtown">Crowne Plaza Seattle Downtown</a></td>
-      <td class="price">약 ¥55,000</td><td>퀸 2개</td><td>4.1</td>
+      <td class="price">약 ¥55,000</td><td>발렛 $63</td><td>퀸 2개</td><td>4.1</td>
       <td>박당 $25 어메니티 요금 별도 ($20/일 F&B 크레딧 포함돼 상쇄)</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=The+Paramount+Hotel+Seattle">The Paramount Hotel</a></td>
-      <td class="price">¥58,404</td><td>퀸 2개</td><td>4.6</td>
+      <td class="price">¥58,404</td><td>발렛 $66</td><td>퀸 2개</td><td>4.6</td>
       <td>별도 요금 없음. 위치·청결 호평 많아 B 중 가장 안정적 <span class="tag best">추천</span></td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Staypineapple+The+Maxwell+Hotel+Seattle">Staypineapple The Maxwell</a></td>
-      <td class="price">약 ¥64,729</td><td>퀸 2개</td><td>4.6</td>
+      <td class="price">약 ¥64,729</td><td>셀프 $42 +세금</td><td>퀸 2개</td><td>4.6</td>
       <td>시애틀 센터(스페이스 니들 인근), 실내 수영장. 다운타운까지 모노레일 이동</td>
     </tr>
   </table></div>
 
-  <h2>C. 브랜드 호텔 후보 + 아멕스 플래티넘 혜택</h2>
+  <h2 id="sec-C">C. 브랜드 호텔 후보 + 아멕스 플래티넘 혜택</h2>
   <div class="note">아래 9곳 중 FHR/THC는 Embassy Suites뿐입니다. 브랜드 공식 사이트 요금과 비교한 결과: W Seattle은 공식 멤버 선불이, Kimpton Vintage는 Amex가 ¥8,488 저렴했고, Hilton Motif는 양 채널이 동등했습니다. Hyatt 회원가는 로그인해야 확인 가능(최대 25% 할인 프로모 있어 역전 가능).</div>
   <div class="tablebox"><table>
-    <tr><th>호텔</th><th>브랜드</th><th>실효 총액</th><th>침대</th><th>아멕스 플래티넘으로 얻는 혜택</th></tr>
+    <tr><th>호텔</th><th>브랜드</th><th>실효 총액</th><th>주차(1박)</th><th>침대</th><th>아멕스 플래티넘으로 얻는 혜택</th></tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Four+Points+by+Sheraton+Seattle+Downtown+Center">Four Points by Sheraton</a></td>
-      <td>Marriott</td><td class="price">¥50,044</td><td>퀸 2개</td>
+      <td>Marriott</td><td class="price">¥50,044</td><td>셀프 $30</td><td>퀸 2개</td>
       <td>Bonvoy Gold 등록 가능: 14:00 레이트 체크아웃, 공실 시 업그레이드, 포인트 +25%. 조식·라운지 없음</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Hilton+Motif+Seattle">Hilton Motif Seattle</a></td>
-      <td>Hilton</td><td class="price">¥58,346</td><td>퀸 2개</td>
+      <td>Hilton</td><td class="price">¥58,346</td><td>셀프 $75.23</td><td>퀸 2개</td>
       <td>Honors Gold 등록 가능: 미국은 조식 대신 1일 F&B 크레딧, 공실 시 업그레이드, 포인트 +80%. 공식 아너스 2박 $397.40과 동등</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Kimpton+Hotel+Vintage+Seattle">Kimpton Hotel Vintage</a></td>
-      <td>IHG</td><td class="price">¥61,787</td><td>퀸 2개</td>
+      <td>IHG</td><td class="price">¥61,787</td><td>발렛 $60 +세금</td><td>퀸 2개</td>
       <td>없음 — 아멕스 플래티넘은 IHG 등급 미제공. 조식 포함 옵션 ¥58,797이 더 저렴</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Renaissance+Seattle+Hotel">Renaissance Seattle</a></td>
-      <td>Marriott</td><td class="price">¥63,326 + $50</td><td>더블 2개</td>
+      <td>Marriott</td><td class="price">¥63,326 + $50</td><td>셀프 $66</td><td>더블 2개</td>
       <td>Bonvoy Gold: Four Points와 동일. 평점 3.9</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Sheraton+Grand+Seattle">Sheraton Grand Seattle</a></td>
-      <td>Marriott</td><td class="price">¥70,115</td><td>더블 2개</td>
+      <td>Marriott</td><td class="price">¥70,115</td><td>발렛 $82</td><td>더블 2개</td>
       <td>Bonvoy Gold: 동일. 라운지는 클럽 객실(¥75,182~)을 사야 확정</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=W+Seattle+hotel">W Seattle</a></td>
-      <td>Marriott</td><td class="price">¥77,226</td><td>더블 2개</td>
+      <td>Marriott</td><td class="price">¥77,226</td><td>발렛 $68</td><td>더블 2개</td>
       <td>Bonvoy Gold: 동일. 공식 멤버 선불 $499(2박)와 환율 ¥155/$가 분기점</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Embassy+Suites+Seattle+Downtown+Pioneer+Square">Embassy Suites Pioneer Square</a></td>
-      <td>Hilton</td><td class="price">¥82,014</td><td>퀸 2개 + 소파베드</td>
+      <td>Hilton</td><td class="price">¥82,014</td><td>셀프 $65.01</td><td>퀸 2개 + 소파베드</td>
       <td><span class="tag">THC</span> $100 현장 크레딧 + Honors Gold 중복 적용. 조식은 전 투숙객 포함. Two Queen Suite 약 46㎡, 거실 분리형, 최대 6인 <span class="tag best">추천</span></td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Hyatt+at+Olive+8+Seattle">Hyatt at Olive 8</a></td>
-      <td>Hyatt</td><td class="price">¥83,088</td><td>퀸 2개</td>
+      <td>Hyatt</td><td class="price">¥83,088</td><td>발렛 약 $65 +세금</td><td>퀸 2개</td>
       <td>없음 — 아멕스 플래티넘은 Hyatt 등급 미제공. 평점 4.5</td>
     </tr>
     <tr>
       <td><a href="https://www.google.com/maps/search/?api=1&query=Grand+Hyatt+Seattle">Grand Hyatt Seattle</a></td>
-      <td>Hyatt</td><td class="price">¥85,579</td><td>더블 2개</td>
+      <td>Hyatt</td><td class="price">¥85,579</td><td>발렛 $68 +세금</td><td>더블 2개</td>
       <td>없음 — 위와 동일. 클럽 액세스 객실은 유료 옵션으로만 확정</td>
     </tr>
   </table></div>
 
-  <h2>D. 조식 없는 호텔 — 근처 조식 옵션</h2>
-  <div class="note">다운타운 호텔은 전부 Pike Place Market 조식권(07:00 전후 오픈 다수)이라 조식 없는 요금이어도 불편이 거의 없습니다.</div>
-  <div class="tablebox"><table>
-    <tr><th>호텔</th><th>근처 조식 (도보)</th></tr>
-    <tr><td>Hilton Motif</td><td>Pike Place 도보 5분 — Bacco Cafe (07:00~, 4.5), The Crumpet Shop (4.7), Storyville Coffee (06:59~). Gold F&B 크레딧은 호텔 내 사용이 우선</td></tr>
-    <tr><td>Kimpton Vintage</td><td>Pike Place권 + Fonté Coffee (1321 1st Ave). 단, 조식 포함 옵션이 더 싸서 외부 조식 불필요</td></tr>
-    <tr><td>Sheraton Grand</td><td>도보 8분 — Bacco Cafe, Biscuit Bitch Pike Place (1909 1st Ave, 4.4)</td></tr>
-    <tr><td>W Seattle</td><td>도보 7분 — Skalka (77 Spring St, 4.6), Fonté Coffee</td></tr>
-    <tr><td>Renaissance</td><td>도보 10분 — 1st Ave 라인 (언덕 아래쪽)</td></tr>
-    <tr><td>Hyatt at Olive 8</td><td>Ludi's (120 Stewart St, 07:00 오픈, 도보 5분), Biscuit Bitch 도보 8분</td></tr>
-    <tr><td>Grand Hyatt</td><td>Bacco Cafe 도보 6분, Storyville Coffee</td></tr>
-    <tr><td>Four Points (시애틀 센터)</td><td>같은 건물 Fireside Cafe (601 Roy St). 도보 12~15분 — Biscuit Bitch Belltown (2303 3rd Ave, 07:30~13:00, 4.5), Macrina Bakery (2408 1st Ave, 4.5), Dahlia Bakery (2001 4th Ave)</td></tr>
-  </table></div>
 
-  <h2>E. 주차 요금 (1박 기준, 2026-11-25 확인)</h2>
-  <div class="note">렌터카 동선: 다운타운에서 픽업 → 3/14 아침 SEA 공항 반납이 가능해(주요 업체 공통, 같은 도시 편도는 수수료 없는 경우가 많음), 호텔 주차는 투어 전날 밤 <strong>1박분만</strong> 필요합니다. 아래는 호텔 공식·예약 채널에서 확인한 1박 요금이며, 세금 별도 표기가 있는 곳은 "+세금"으로 적었습니다.</div>
-  <div class="tablebox"><table>
-    <tr><th>호텔</th><th>주차</th><th>1박 요금</th><th>비고</th></tr>
-    <tr><td>B1 La Quinta Downtown</td><td>셀프</td><td class="price">$19</td><td>후보 중 압도적으로 저렴. 대수 제한 있음</td></tr>
-    <tr><td>C1 Four Points by Sheraton</td><td>셀프</td><td class="price">$30</td><td>브랜드 호텔 중 최저</td></tr>
-    <tr><td>B2 Staypineapple Hotel Five</td><td>셀프</td><td class="price">$42 +세금</td><td>지하 주차장, 높이 6'3" 제한</td></tr>
-    <tr><td>B5 Staypineapple Maxwell</td><td>셀프</td><td class="price">$42 +세금</td><td>지하 주차장, 높이 6'3" 제한</td></tr>
-    <tr><td>A5 Fairmont Olympic</td><td>셀프</td><td class="price">$56.14</td><td>세금 포함. 발렛은 $81.09</td></tr>
-    <tr><td>C3 Kimpton Hotel Vintage</td><td>발렛</td><td class="price">$60 +세금</td><td></td></tr>
-    <tr><td>A1 Alexis Royal Sonesta</td><td>발렛</td><td class="price">$62 +세금</td><td></td></tr>
-    <tr><td>B3 Crowne Plaza</td><td>발렛</td><td class="price">$63</td><td></td></tr>
-    <tr><td>A2 Charter Hotel</td><td>발렛</td><td class="price">$65</td><td></td></tr>
-    <tr><td>C7 Embassy Suites</td><td>셀프</td><td class="price">$65.01</td><td>건물 내 차고, 발렛 없음</td></tr>
-    <tr><td>C8 Hyatt at Olive 8</td><td>발렛</td><td class="price">약 $65 +세금</td><td>채널별 $58~74로 편차 있음</td></tr>
-    <tr><td>B4 Paramount</td><td>발렛</td><td class="price">$66</td><td>세금 포함. 대수 제한, 선착순</td></tr>
-    <tr><td>C4 Renaissance</td><td>셀프</td><td class="price">$66</td><td>발렛은 $74</td></tr>
-    <tr><td>A3 Thompson Seattle</td><td>발렛</td><td class="price">$68.75</td><td></td></tr>
-    <tr><td>C6 W Seattle</td><td>발렛</td><td class="price">$68</td><td></td></tr>
-    <tr><td>C9 Grand Hyatt</td><td>발렛</td><td class="price">$68 +세금</td><td>연결된 7th &amp; Pike 차고 셀프는 약 $30~37로 더 저렴</td></tr>
-    <tr><td>A4 Hotel 1000</td><td>발렛</td><td class="price">$70 +세금</td><td></td></tr>
-    <tr><td>C2 Hilton Motif</td><td>셀프</td><td class="price">$75.23</td><td>후보 중 최고가</td></tr>
-    <tr><td>C5 Sheraton Grand</td><td>발렛</td><td class="price">$82</td><td>금~일은 $82, 월~목은 $72 (3/13은 토요일이라 $82)</td></tr>
-  </table></div>
 
-  <h2>위치 · 동선 메모</h2>
+  <h2 id="sec-route">위치 · 동선 메모</h2>
   <div class="summary">
     <ul>
       <li>호텔은 Maxwell·Four Points를 빼면 전부 다운타운 — Pike Place·다운타운 Target 도보권.</li>
       <li>Museum of Flight는 남쪽(차로 약 15분), Boeing Future of Flight(Everett)는 북쪽(차로 약 40분) — 다운타운이 중간 거점.</li>
       <li>Walmart는 시애틀 시내에 없고 가장 가까운 곳이 Renton점이라, 차로 이동하는 날 묶어서 가는 게 좋습니다.</li>
-      <li><strong>렌터카 동선 (반영됨):</strong> 다운타운 픽업 → SEA 공항 반납 가능. 3/13 아침 픽업해 항공 투어를 돌고, 호텔 주차 1박(위 E표) 후 3/14 아침 공항에서 반납하면 3인+짐의 공항 이동이 따로 필요 없습니다. 차량 포함 가이드 투어(인당 $125~135, 3인 약 ¥60,000~64,500)보다 렌터카+공식 티켓(약 ¥35,000~40,000)이 저렴한 것도 이 동선 기준입니다.</li>
+      <li><strong>렌터카 동선 (반영됨):</strong> 다운타운 픽업 → SEA 공항 반납 가능. 3/13 아침 픽업해 항공 투어를 돌고, 호텔 주차 1박(위 A~C 표의 주차 열) 후 3/14 아침 공항에서 반납하면 3인+짐의 공항 이동이 따로 필요 없습니다. 차량 포함 가이드 투어(인당 $125~135, 3인 약 ¥60,000~64,500)보다 렌터카+공식 티켓(약 ¥35,000~40,000)이 저렴한 것도 이 동선 기준입니다.</li>
       <li>Hilton Seattle(플래그십)은 해당 날짜에 Amex·공식 모두 판매 없음.</li>
     </ul>
   </div>
 
   <p class="small">미확인 항목: FHR/THC 크레딧의 엔화 환산액, 3인째 조식 추가 요금(FHR/THC), La Quinta 3인째 추가 요금, Hyatt 공식 회원가, 렌터카 편도 반납 수수료 유무(업체·날짜별 상이). 주차 요금은 2026-11-25에 호텔 공식·예약 채널에서 확인한 1박 기준가로, 숙박 요금은 2026-11-24 조회 시점 기준이며 예약 전 재확인이 필요합니다. 예약은 아직 하지 않았습니다.</p>
 
-  <h2>F. SEA→LAX 항공편 — 델타 전편 (2026-11-25 조회)</h2>
+  <h2 id="sec-F">F. SEA→LAX 항공편 — 델타 전편 (2026-11-25 조회)</h2>
   <div class="note">Google Flights 기준, 성인 3인 · 이코노미 · 위탁수하물 1인 1개($45) 포함. 금액은 <strong>1인당 / 3인 합계</strong> 순. 최저가 운임 $701(3인)은 토·일·월 3일 모두 동일해서 날짜를 옮겨도 절약이 없습니다. 토요일은 19:55편이 없어 5편, 일·월은 6편입니다.</div>
   <div class="tablebox"><table>
     <tr><th>날짜</th><th>편명</th><th>출발→도착</th><th>1인당</th><th>3인 합계</th></tr>
-    <tr><td>토 3/13</td><td>DL1628</td><td>07:15→10:05</td><td class="price">¥44,400</td><td>¥133,200</td></tr>
-    <tr><td>토 3/13</td><td>DL2769</td><td>09:35→12:25</td><td class="price">¥44,400</td><td>¥133,200</td></tr>
-    <tr><td>토 3/13</td><td>DL2914</td><td>11:35→14:24</td><td class="price">¥50,000</td><td>¥149,900</td></tr>
-    <tr><td>토 3/13</td><td>DL2830</td><td>14:30→17:16</td><td class="price">¥50,000</td><td>¥149,900</td></tr>
-    <tr><td>토 3/13</td><td>DL2861</td><td>17:49→20:34</td><td class="price">¥44,400</td><td>¥133,200</td></tr>
-    <tr><td>일 3/14</td><td>DL1628</td><td>07:15→10:05</td><td class="price">¥44,400</td><td>¥133,200</td></tr>
-    <tr><td>일 3/14</td><td>DL2769</td><td>09:35→12:25</td><td class="price">¥44,400</td><td>¥133,200</td></tr>
-    <tr><td>일 3/14</td><td>DL2914</td><td>11:35→14:24</td><td class="price">¥53,200</td><td>¥159,500</td></tr>
-    <tr><td>일 3/14</td><td>DL2830</td><td>14:30→17:16</td><td class="price">¥54,000</td><td>¥161,800</td></tr>
-    <tr><td>일 3/14</td><td>DL2861</td><td>17:49→20:34</td><td class="price">¥53,200</td><td>¥159,500</td></tr>
-    <tr><td>일 3/14</td><td>DL2854</td><td>19:55→22:44</td><td class="price">¥44,400</td><td>¥133,200</td></tr>
-    <tr><td>월 3/15</td><td>DL1628</td><td>07:15→10:05</td><td class="price">¥44,400</td><td>¥133,200</td></tr>
-    <tr><td>월 3/15</td><td>DL2769</td><td>09:35→12:25</td><td class="price">¥44,400</td><td>¥133,200</td></tr>
-    <tr><td>월 3/15</td><td>DL2914</td><td>11:35→14:24</td><td class="price">¥44,400</td><td>¥133,200</td></tr>
-    <tr><td>월 3/15</td><td>DL2830</td><td>14:30→17:16</td><td class="price">¥54,000</td><td>¥161,800</td></tr>
-    <tr><td>월 3/15</td><td>DL2861</td><td>17:49→20:34</td><td class="price">¥53,200</td><td>¥159,500</td></tr>
-    <tr><td>월 3/15</td><td>DL2854</td><td>19:55→22:44</td><td class="price">¥44,400</td><td>¥133,200</td></tr>
+    <tr><td>토 3/13</td><td>DL1628</td><td>07:15→10:05</td><td class="price p1">¥44,400</td><td class="p1">¥133,200</td></tr>
+    <tr><td>토 3/13</td><td>DL2769</td><td>09:35→12:25</td><td class="price p1">¥44,400</td><td class="p1">¥133,200</td></tr>
+    <tr><td>토 3/13</td><td>DL2914</td><td>11:35→14:24</td><td class="price p2">¥50,000</td><td class="p2">¥149,900</td></tr>
+    <tr><td>토 3/13</td><td>DL2830</td><td>14:30→17:16</td><td class="price p2">¥50,000</td><td class="p2">¥149,900</td></tr>
+    <tr><td>토 3/13</td><td>DL2861</td><td>17:49→20:34</td><td class="price p1">¥44,400</td><td class="p1">¥133,200</td></tr>
+    <tr><td>일 3/14</td><td>DL1628</td><td>07:15→10:05</td><td class="price p1">¥44,400</td><td class="p1">¥133,200</td></tr>
+    <tr><td>일 3/14</td><td>DL2769</td><td>09:35→12:25</td><td class="price p1">¥44,400</td><td class="p1">¥133,200</td></tr>
+    <tr><td>일 3/14</td><td>DL2914</td><td>11:35→14:24</td><td class="price p3">¥53,200</td><td class="p3">¥159,500</td></tr>
+    <tr><td>일 3/14</td><td>DL2830</td><td>14:30→17:16</td><td class="price pmax">¥54,000</td><td class="pmax">¥161,800</td></tr>
+    <tr><td>일 3/14</td><td>DL2861</td><td>17:49→20:34</td><td class="price p3">¥53,200</td><td class="p3">¥159,500</td></tr>
+    <tr><td>일 3/14</td><td>DL2854</td><td>19:55→22:44</td><td class="price p1">¥44,400</td><td class="p1">¥133,200</td></tr>
+    <tr><td>월 3/15</td><td>DL1628</td><td>07:15→10:05</td><td class="price p1">¥44,400</td><td class="p1">¥133,200</td></tr>
+    <tr><td>월 3/15</td><td>DL2769</td><td>09:35→12:25</td><td class="price p1">¥44,400</td><td class="p1">¥133,200</td></tr>
+    <tr><td>월 3/15</td><td>DL2914</td><td>11:35→14:24</td><td class="price p1">¥44,400</td><td class="p1">¥133,200</td></tr>
+    <tr><td>월 3/15</td><td>DL2830</td><td>14:30→17:16</td><td class="price pmax">¥54,000</td><td class="pmax">¥161,800</td></tr>
+    <tr><td>월 3/15</td><td>DL2861</td><td>17:49→20:34</td><td class="price p3">¥53,200</td><td class="p3">¥159,500</td></tr>
+    <tr><td>월 3/15</td><td>DL2854</td><td>19:55→22:44</td><td class="price p1">¥44,400</td><td class="p1">¥133,200</td></tr>
   </table></div>
-  <div class="note">최저가 $701 운임은 DL2769(토) 예약 화면에서 <strong>Main Basic(베이식 이코노미)</strong>으로 확인됨 — SKYPASS 적립 0, Sky Club 이용 불가. 같은 편의 Main Classic은 운임 $851(수하물 포함 3인 ¥157,100). 다른 날짜의 $701도 베이식일 가능성이 높습니다. 델타 외 최저가는 알래스카 AS717 일 3/14 11:10→LGB 13:47, 1인 <strong>¥35,200</strong> / 3인 ¥105,500 — LGB(롱비치)가 애너하임에 더 가깝습니다(차로 약 25~30분). SEA→LAX 운전 이동은 약 1,820km·17~18시간이라 제외했습니다.</div>
+  <div class="note">최저가 $701 운임은 DL2769(토) 예약 화면에서 <strong>Main Basic(베이식 이코노미)</strong>으로 확인됨 — SKYPASS 적립 0, Sky Club 이용 불가. 같은 편의 Main Classic은 운임 $851(수하물 포함 3인 ¥157,100). 다른 날짜의 $701도 베이식일 가능성이 높습니다. 델타 외 최저가는 알래스카 AS717 일 3/14 11:10→LGB 13:47, 1인 <strong>¥35,200</strong> / 3인 ¥105,500 — LGB(롱비치)가 애너하임에 더 가깝습니다(차로 약 25~30분). SEA→LAX 운전 이동은 약 1,820km·17~18시간이라 제외했습니다. 가격 색상: <strong>진한 파랑=최저가, 파랑=2번째로 저렴, 연한 파랑=3번째로 저렴, 빨강=최고가</strong>.</div>
 
-  <h2>G. LAX→TYO + TYO→SHA 다구간 (ANA 유상, 2인)</h2>
+  <h2 id="sec-LA">LA 일정 · 호텔 후보 (애너하임 · LA 시내)</h2>
+  <div class="tablebox"><table>
+    <tr><th>날짜</th><th>일정</th><th>비고</th></tr>
+    <tr><td>3/14(일)</td><td>LA 도착 → 애너하임 이동, 체크인</td><td>DL2769 기준 LAX 12:25 도착 (<a href="#sec-F">F</a>), LAX→애너하임 차로 약 50~60분 (LGB 도착이면 약 25~30분). 이동 수단은 <a href="#sec-K">K</a></td></tr>
+    <tr><td>3/15(월)~16(화)</td><td>디즈니랜드 애너하임 2일</td><td>티켓은 <a href="#sec-H">H</a> (월·화 $154 티어 / 2일권 $335 정액)</td></tr>
+    <tr><td>3/17(수)</td><td>LA 시내 관광 → LAX 출발</td><td>애너하임 픽업 → LAX 반납 렌터카로 관광 후 공항 이동 (<a href="#sec-K">K</a>). 출발 편·날짜는 <a href="#sec-G">G</a> — 3/18·19로 늦추면 그만큼 관광일이 늘어남</td></tr>
+  </table></div>
+  <div class="note">변형: 안 2(토 3/13 이동)면 일요일이 LA 여유일이 되고, 안 3(LA 시내 1박)이면 화 3/16 밤을 다운타운에서 잡니다 — 숙박 배분 비교는 <a href="#sec-L">L</a>.</div>
+
+  <h3>안 1 — 애너하임 3박 (3/14 일 → 3/17 수, 3인 1실, 2026-11-25 조회)</h3>
+  <div class="tablebox"><table>
+    <tr><th>호텔</th><th>구분</th><th>실효 총액</th><th>주차(1박)</th><th>침대</th><th>혜택 · 비고</th></tr>
+    <tr><td>JW Marriott Anaheim Resort</td><td><span class="tag">THC</span></td><td class="price">¥352,003</td><td>발렛 $69</td><td>퀸 2개</td><td>Amex Travel. $100 크레딧, 조식 2인분, 12:00 체크인·레이트 체크아웃(공실 시). 롤어웨이 베드 $25/일. 취소 3/11 이후 전액</td></tr>
+    <tr><td>The Westin Anaheim Resort</td><td><span class="tag fhr">FHR</span></td><td class="price">¥566,988</td><td>셀프 $50 / 발렛 $60</td><td>퀸 2개</td><td>Amex Travel. $100 F&B 크레딧, 조식 2인분, 16:00 체크아웃 보장</td></tr>
+    <tr><td>Howard Johnson Anaheim</td><td>일반</td><td class="price">¥145,116</td><td>유료 셀프 (금액 확인 중)</td><td>퀸 2개</td><td>Google 호텔 최저 (Kiwi.com). 후보 중 최저가. 조식 포함 표시 없음. 밤별 요금은 <a href="#sec-I">I</a></td></tr>
+    <tr><td>Best Western Park Place Inn</td><td>일반</td><td class="price">¥160,800</td><td>유료 (금액 확인 중)</td><td>더블 2개</td><td>Google 호텔 최저 (Vio.com, <strong>조식 포함</strong>). 밤별 요금은 <a href="#sec-I">I</a></td></tr>
+    <tr><td>The Anaheim Hotel</td><td>일반</td><td class="price">¥167,664</td><td>유료 셀프 (금액 확인 중)</td><td>퀸 2개</td><td>Google 호텔 최저 (trivago), 공식 ¥167,860. 부분 파크뷰 룸. 밤별 요금은 <a href="#sec-I">I</a></td></tr>
+    <tr><td>Fairfield Anaheim Resort</td><td>일반</td><td class="price">¥177,272</td><td>유료 (금액 확인 중)</td><td>퀸 2개</td><td>Google 호텔 최저 (Agoda), 공식 ¥215,420. 밤별 요금은 <a href="#sec-I">I</a></td></tr>
+    <tr><td>Courtyard Theme Park Entrance</td><td>일반</td><td class="price">¥357,732</td><td>유료 발렛 (금액 확인 중)</td><td>퀸 2개 + 2층 침대</td><td>Google 호텔 최저, 공식 ¥452,330 (요금 공개 초기라 높게 표시). 밤별 요금은 <a href="#sec-I">I</a></td></tr>
+  </table></div>
+  <div class="note">애너하임에서 Amex FHR/THC로 판매되는 호텔은 위 2곳뿐이고, 기존 후보 5곳은 Amex에서 판매하지 않습니다.</div>
+
+  <h3>안 3 — 애너하임 2박 (3/14 일 → 3/16 화)</h3>
+  <div class="tablebox"><table>
+    <tr><th>호텔</th><th>구분</th><th>실효 총액</th><th>주차(1박)</th><th>침대</th><th>혜택 · 비고</th></tr>
+    <tr><td>JW Marriott Anaheim Resort</td><td><span class="tag">THC</span></td><td class="price">¥229,079</td><td>발렛 $69</td><td>퀸 2개</td><td>Amex Travel. 혜택은 안 1과 동일</td></tr>
+    <tr><td>The Westin Anaheim Resort</td><td><span class="tag fhr">FHR</span></td><td class="price">¥356,212</td><td>셀프 $50 / 발렛 $60</td><td>퀸 2개</td><td>Amex Travel. 혜택은 안 1과 동일</td></tr>
+    <tr><td>Howard Johnson Anaheim</td><td>일반</td><td class="price">¥97,098</td><td>유료 셀프 (금액 확인 중)</td><td>퀸 2개</td><td>Google 호텔 최저 (Kiwi.com), Vio.com은 ¥119,509</td></tr>
+    <tr><td>The Anaheim Hotel</td><td>일반</td><td class="price">¥107,734</td><td>유료 셀프 (금액 확인 중)</td><td>퀸 2개</td><td>Google 호텔 최저 (trivago)</td></tr>
+    <tr><td>Best Western Park Place Inn</td><td>일반</td><td class="price">¥108,380</td><td>유료 (금액 확인 중)</td><td>더블 2개</td><td>Google 호텔 최저 (dealbase), Agoda ¥109,224는 조식 포함</td></tr>
+    <tr><td>Fairfield Anaheim Resort</td><td>일반</td><td class="price">¥109,414</td><td>유료 (금액 확인 중)</td><td>퀸 2개</td><td>Google 호텔 최저 (trivago)</td></tr>
+    <tr><td>Courtyard Theme Park Entrance</td><td>일반</td><td class="price">¥210,489</td><td>유료 발렛 (금액 확인 중)</td><td>퀸 2개 + 2층 침대</td><td>Google 호텔 최저, 공식 ¥287,256</td></tr>
+  </table></div>
+
+  <h3>안 3 — LA 시내 1박 (3/16 화 → 3/17 수)</h3>
+  <div class="tablebox"><table>
+    <tr><th>호텔</th><th>구분</th><th>실효 총액</th><th>주차(1박)</th><th>침대</th><th>혜택 · 비고</th></tr>
+    <tr><td>Conrad Los Angeles</td><td><span class="tag fhr">FHR</span></td><td class="price">¥90,161</td><td>발렛 $70</td><td>더블 2개</td><td>Amex Travel ¥83,263 + 현지 부과 ¥6,898. $100 크레딧, 조식 2인분, 16:00 체크아웃 보장</td></tr>
+    <tr><td>Downtown Los Angeles Proper Hotel</td><td><span class="tag fhr">FHR</span></td><td class="price">¥103,462</td><td>발렛 $66</td><td>퀸 2개</td><td>Amex Travel. $100 크레딧, 조식 2인분. <strong>취소 조건 매우 엄격</strong> (검색 다음 날부터 전액)</td></tr>
+    <tr><td>The Ritz-Carlton, Los Angeles</td><td><span class="tag fhr">FHR</span></td><td class="price">¥144,176</td><td>발렛 $71.50</td><td>퀸 2개</td><td>Amex Travel. $100 크레딧, 조식 2인분. 최저가 킹 1개 객실(실효 ¥134,939)은 성인 3인에 부적합해 퀸×2 기준</td></tr>
+    <tr><td>Freehand Los Angeles</td><td>일반</td><td class="price">¥26,788</td><td>주차 있음 (금액 확인 중)</td><td>패밀리룸/벙크 (4인)</td><td>Google 호텔 최저. 호스텔 계열, 조식 별도. 밤별 요금은 <a href="#sec-J">J</a></td></tr>
+    <tr><td>Millennium Biltmore</td><td>일반</td><td class="price">¥31,370</td><td>유료 발렛 (금액 확인 중)</td><td>더블 2개</td><td>Google 호텔 최저 (Traveloka). 디럭스룸은 ¥48,226. 밤별 요금은 <a href="#sec-J">J</a></td></tr>
+    <tr><td>Westin Bonaventure</td><td>일반</td><td class="price">¥44,014</td><td>유료 발렛 (금액 확인 중)</td><td>더블 2개</td><td>Google 호텔 최저 (Trip.com), 공식 ¥44,048. 조식 별도. 밤별 요금은 <a href="#sec-J">J</a></td></tr>
+    <tr><td>Hotel Figueroa</td><td>일반</td><td class="price">¥62,107</td><td>유료 (금액 확인 중)</td><td>더블 2개 / 퀸 2개</td><td>Google 호텔 최저 (Trip.com). Amex THC 호텔이지만 1박은 THC 적용·판매 없음. 밤별 요금은 <a href="#sec-J">J</a></td></tr>
+  </table></div>
+  <div class="note">THC는 2박 이상 예약이 조건이라 LA 시내 1박에는 FHR만 있습니다. <strong>합산 참고 (주차 제외, 최저가 기준)</strong> — 안 1: 후보 최저 ¥145,116 (Howard Johnson) / FHR·THC 최저 ¥352,003 (JW Marriott). 안 3: 후보 조합 ¥123,886 (Howard Johnson 2박 + Freehand 1박) / FHR 조합 ¥319,240 (JW Marriott 2박 + Conrad 1박). 일반 후보의 주차 금액은 Google 호텔에 표시되지 않아 확인 중입니다.</div>
+  <h2 id="sec-G">G. LAX→TYO + TYO→SHA 다구간 (ANA 유상, 2인)</h2>
   <div class="note">2구간은 NH969 2027-04-10 HND 10:05→SHA 12:15로 고정. Google Flights 기준(2026-11-25)이며 운임 브랜드가 표시되지 않아 <strong>Value Plus 여부는 미확인</strong> — 발권 전 ANA 공식 사이트에서 재확인이 필요합니다(11/25 ANA 사이트는 시스템 오류로 조회 불가였고, 11/23 직접 조회에서는 3/17 NH5가 $1,362.80으로 더 쌌습니다).</div>
   <div class="tablebox"><table>
     <tr><th>LAX 출발</th><th>편명</th><th>출발→도착</th><th>1인당</th><th>2인 합계</th></tr>
-    <tr><td>수 3/17</td><td>NH5</td><td>12:30→NRT 16:30 (+1일)</td><td class="price">¥123,000</td><td>$1,544</td></tr>
-    <tr><td>수 3/17</td><td>NH125</td><td>17:00→HND 21:05 (+1일)</td><td class="price">¥123,000</td><td>$1,544</td></tr>
-    <tr><td>수 3/17</td><td>NH105</td><td>00:55→HND 05:00 (+1일)</td><td class="price">¥124,100</td><td>$1,558</td></tr>
-    <tr><td>목 3/18</td><td>NH125</td><td>17:00→HND 21:05 (+1일)</td><td class="price">¥159,500</td><td>$2,002</td></tr>
+    <tr><td>수 3/17</td><td>NH5</td><td>12:30→NRT 16:30 (+1일)</td><td class="price p1">¥123,000</td><td class="p1">$1,544</td></tr>
+    <tr><td>수 3/17</td><td>NH125</td><td>17:00→HND 21:05 (+1일)</td><td class="price p1">¥123,000</td><td class="p1">$1,544</td></tr>
+    <tr><td>수 3/17</td><td>NH105</td><td>00:55→HND 05:00 (+1일)</td><td class="price p2">¥124,100</td><td class="p2">$1,558</td></tr>
+    <tr><td>목 3/18</td><td>NH125</td><td>17:00→HND 21:05 (+1일)</td><td class="price p3">¥159,500</td><td class="p3">$2,002</td></tr>
     <tr><td>목 3/18</td><td>NH105</td><td>00:55→HND 05:00 (+1일)</td><td class="price">¥163,100</td><td>$2,048</td></tr>
     <tr><td>목 3/18</td><td>NH5</td><td>12:30→NRT 16:30 (+1일)</td><td class="price">¥192,400</td><td>$2,416</td></tr>
-    <tr><td>금 3/19</td><td>NH105·NH5·NH125</td><td>전편 동일가</td><td class="price">¥202,000</td><td>$2,536</td></tr>
+    <tr><td>금 3/19</td><td>NH105·NH5·NH125</td><td>전편 동일가</td><td class="price pmax">¥202,000</td><td class="pmax">$2,536</td></tr>
   </table></div>
-  <div class="note"><strong>출발을 늦추는 진짜 비용</strong> (운임 차이 + 늘어나는 애너하임 숙박): 3/18 출발은 3/17 대비 약 <strong>¥122,000~141,000</strong> 추가(운임 1인 +¥36,500 + 수요일 1박), 3/19 출발은 약 <strong>¥256,000~280,000</strong> 추가(운임 1인 +¥79,000 + 2박). NH105(00:55)는 실질적으로 전날(3/16) 밤에 LA를 떠나는 일정이라 애너하임이 1박 줄어듭니다.</div>
+  <div class="note"><strong>출발을 늦추는 진짜 비용</strong> (운임 차이 + 늘어나는 애너하임 숙박): 3/18 출발은 3/17 대비 약 <strong>¥122,000~141,000</strong> 추가(운임 1인 +¥36,500 + 수요일 1박), 3/19 출발은 약 <strong>¥256,000~280,000</strong> 추가(운임 1인 +¥79,000 + 2박). NH105(00:55)는 실질적으로 전날(3/16) 밤에 LA를 떠나는 일정이라 애너하임이 1박 줄어듭니다. 가격 색상: <strong>진한 파랑=최저가, 파랑=2번째로 저렴, 연한 파랑=3번째로 저렴, 빨강=최고가</strong>.</div>
 
-  <h2>H. 디즈니랜드(애너하임) 티켓 — 공식 사이트, 1인당</h2>
+  <h2 id="sec-H">H. 디즈니랜드(애너하임) 티켓 — 공식 사이트, 1인당</h2>
   <div class="tablebox"><table>
     <tr><th>구분</th><th>가격</th><th>비고</th></tr>
     <tr><td>1일 1파크권 — 토·일 (3/13~14)</td><td class="price">$189 ≈ ¥30,100</td><td>최고 티어</td></tr>
@@ -967,7 +982,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   </table></div>
   <div class="note">2027년 3월분은 이미 판매 중입니다. 이틀 모두 1일권으로 사면 월·화 $308, 일+월 $343이라 2일권 정액이 유리합니다.</div>
 
-  <h2>I. 애너하임 호텔 — 밤별 요금 (3인 1실, 세금 포함, 2026-11-25 조회)</h2>
+  <h2 id="sec-I">I. 애너하임 호텔 — 밤별 요금 (3인 1실, 세금 포함, 2026-11-25 조회)</h2>
   <div class="note">Google Hotels 최저가 기준(USD). 괄호는 공식 사이트가. 토요일 밤이 일률적으로 가장 비싸지 않고, 봄방학 수요로 <strong>월요일이 최고가인 곳이 여럿</strong>입니다. 1박 환산 약 ¥47,500~99,700으로 시애틀(¥23,000~54,000)보다 비쌉니다.</div>
   <div class="tablebox"><table>
     <tr><th>호텔</th><th>토 3/13</th><th>일 3/14</th><th>월 3/15</th><th>화 3/16</th><th>수 3/17</th><th>목 3/18</th></tr>
@@ -978,7 +993,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <tr><td>Courtyard Theme Park Entrance</td><td>$626 (공식)</td><td>$427~ (공식 $626)</td><td>$825 (공식)</td><td>미조회</td><td>미조회</td><td>미조회</td></tr>
   </table></div>
 
-  <h2>J. LA 시내(다운타운) 1박안</h2>
+  <h2 id="sec-J">J. LA 시내(다운타운) 1박안</h2>
   <div class="note">다운타운 LA 호텔이 애너하임 파크 근처보다 쌉니다. 디즈니 월·화를 깨지 않는 <strong>배치 2 (애너하임 2박 3/14~15 → LA 시내 화 3/16 밤)</strong> 기준, 빠지는 애너하임 화요일 밤($372~433)과 맞바꿔 약 <strong>¥15,000~35,000 절약</strong> + 수요일 오전 LA 관광 + 출발일 LAX 접근이 편해집니다. 배치 1(LA 먼저)은 월요일 아침 이동으로 디즈니 첫날 입장이 약 10:30으로 늦어집니다. Freehand는 호스텔 계열이라 최저가 객실 타입 확인이 필요하고, 다운타운은 밤 동선에 주의가 필요합니다.</div>
   <div class="tablebox"><table>
     <tr><th>호텔</th><th>일 3/14 밤</th><th>화 3/16 밤</th></tr>
@@ -988,7 +1003,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <tr><td>Westin Bonaventure</td><td class="price">$261 ≈ ¥41,600</td><td class="price">$276 ≈ ¥44,000</td></tr>
   </table></div>
 
-  <h2>K. 대중교통 · 렌터카 메모 (2026-11-25 공식 출처 확인)</h2>
+  <h2 id="sec-K">K. 대중교통 · 렌터카 메모 (2026-11-25 공식 출처 확인)</h2>
   <div class="summary">
     <ul>
       <li><strong>시애틀 Link 라이트레일:</strong> SEA 공항 → 다운타운(Westlake) 약 39분, 성인 $3 정액. 다운타운 내 이동은 도보 + 라이트레일로 해결됩니다.</li>
@@ -1000,7 +1015,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     </ul>
   </div>
 
-  <h2>L. 1박 조정안 비교 (총 6박은 동일)</h2>
+  <h2 id="sec-L">L. 1박 조정안 비교 (총 6박은 동일)</h2>
   <div class="tablebox"><table>
     <tr><th>안</th><th>배분</th><th>숙박 차이</th><th>특징</th></tr>
     <tr><td>안 1 (기본)</td><td>시애틀 3박 + 애너하임 3박, 일 3/14 이동</td><td>기준</td><td>디즈니 월·화, 항공 투어 예비일 있음</td></tr>
@@ -1009,7 +1024,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   </table></div>
   <div class="note">도시 비교 요약 — 시애틀: 대중교통 우수(라이트레일·도보권), 숙박 저렴, 항공 투어 거점. 단 3월 평균 최고 약 12°C·비 잦음, 다운타운 볼거리는 이틀이면 소진, Everett·Walmart는 차 필요. LA: 평균 최고 약 21°C로 따뜻, 관광 다양. 단 대중교통 약함(ART 종료·직행 없음), 숙박 비쌈, 명소가 분산. 최종 선택과 결제는 본인이 직접 합니다 — 예약은 아직 하지 않았습니다.</div>
 
-  <h2>N. 시애틀 항공 투어 — 렌터카 vs 가이드 투어 (3인, 2026-11-25 비교)</h2>
+  <h2 id="sec-N">N. 시애틀 항공 투어 — 렌터카 vs 가이드 투어 (3인, 2026-11-25 비교)</h2>
   <div class="tablebox"><table>
     <tr><th>안</th><th>구성</th><th>3인 총액</th><th>특징</th></tr>
     <tr><td>안 A (렌터카)</td><td>다운타운 픽업 → SEA 반납 렌터카 1일 + Boeing Future of Flight 티켓 직접 구매 (1인 $42~46)</td><td>약 ¥35,000~40,000 (렌트 약 $70~100 + 유류 약 $15, 주차 무료)</td><td>약 ¥25,000 저렴하고 시간 자유. Museum of Flight·Renton Walmart 같은 날 조합 가능. 국제운전면허증 사전 발급 필요, 공장 투어 티켓은 매진 잦아 사전 구매 권장</td></tr>
